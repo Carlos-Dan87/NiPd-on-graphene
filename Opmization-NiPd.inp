@@ -1,0 +1,20 @@
+%base "C50H18N3-Pd3Ni3-M2"
+!PAL8
+!KDIIS
+!PBE def2-ECP def2-svp def2/j tightscf slowconv D3 opt
+% scf
+  MaxIter=1250
+ Convergence tight
+end
+*xyzfile 0 2 geometria.xyz
+
+$new_job
+%base "C50H18N3-Pd3Ni3-M4"
+!pal4
+!KDIIS
+!PBE def2-ECP def2-svp def2/j tightscf slowconv D3 opt
+% scf
+  MaxIter=1250
+ Convergence tight
+end
+*xyzfile  0 4 C50H18N3-Pd3Ni3-M2.xyz
